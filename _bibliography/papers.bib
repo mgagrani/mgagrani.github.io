@@ -1,113 +1,313 @@
----
----
+### LLM papers ####
+@article{gagrani2024speculative,
+  title={On Speculative Decoding for Multimodal Large Language Models},
+  author={Gagrani, Mukul and Goel, Raghavv and Jeon, Wonseok and Park, Junyoung and Lee, Mingu and Lott, Christopher},
+  journal={IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+  year={2024},
+  area={Efficient LLMs},
+  selected=true,
+  abbr={CVPR},
+  award={Selected as spotlight paper in ELVM workshop at CVPR 2024},
+  pdf={https://arxiv.org/pdf/2404.08856},
+  preview={multimodal_spd.png},
+  abstract={Inference with Multimodal Large Language Models
+(MLLMs) is slow due to their large-language-model
+backbone which suffers from memory bandwidth bottleneck and generates tokens auto-regressively. In this paper, we explore the application of speculative decoding
+to enhance the inference efficiency of MLLMs, specifically the LLaVA 7B model. We show that a languageonly model can serve as a good draft model for speculative decoding with LLaVA 7B, bypassing the need
+for image tokens and their associated processing components from the draft model. Our experiments across
+three different tasks show that speculative decoding can
+achieve a memory-bound speedup of up to 2.37x using a 115M parameter language model that we trained
+from scratch. Additionally, we introduce a compact
+LLaVA draft model incorporating an image adapter,
+which shows marginal performance gains in image captioning while maintaining comparable results in other
+tasks.
+},
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title={Relativity: the Special and General Theory},
-  author={Einstein, Albert},
-  year={1920},
-  publisher={Methuen & Co Ltd},
-  html={relativity.html}
+@article{jeon2024recursive,
+  title={Recursive Speculative Decoding: Accelerating LLM Inference via Sampling Without Replacement},
+  author={Jeon, Wonseok and Gagrani, Mukul and Goel, Raghavv and Park, Junyoung and Lee, Mingu and Lott, Christopher},
+  journal={arXiv preprint arXiv:2402.14160},
+  year={2024},
+  area={Efficient LLMs},
+  selected=true,
+  pdf={https://arxiv.org/pdf/2402.14160},
+  preview={rsd.png},
+  abstract={Speculative decoding is an inference-acceleration method for large language models (LLMs) where a small language model generates a draft-token sequence which is further verified by the target LLM in parallel. Recent works have advanced this method by establishing a draft-token tree, achieving superior performance over a single-sequence speculative decoding. However, those works independently generate tokens at each level of the tree, not leveraging the tree's entire diversifiability. Besides, their empirical superiority has been shown for fixed length of sequences, implicitly granting more computational resource to LLM for the tree-based methods. None of the existing works has conducted empirical studies with fixed target computational budgets despite its importance to resource-bounded devices. We present Recursive Speculative Decoding (RSD), a novel tree-based method that samples draft tokens without replacement and maximizes the diversity of the tree. During RSD's drafting, the tree is built by either Gumbel-Top-k trick that draws tokens without replacement in parallel or Stochastic Beam Search that samples sequences without replacement while early-truncating unlikely draft sequences and reducing the computational cost of LLM. We empirically evaluate RSD with Llama 2 and OPT models, showing that RSD outperforms the baseline methods, consistently for fixed draft sequence length and in most cases for fixed computational budgets at LLM.},
 }
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation},
-  preview={brownian-motion.gif}
+@article{goel2024direct,
+  title={Direct Alignment of Draft Model for Speculative Decoding with Chat-Fine-Tuned LLMs},
+  author={Goel, Raghavv and Gagrani, Mukul and Jeon, Wonseok and Park, Junyoung and Lee, Mingu and Lott, Christopher},
+  journal={ICLR Workshop on Mathematical and Empirical Understanding of Foundation Models},
+  year={2024},
+  html={https://openreview.net/forum?id=126PpV2CoO},
+  area={Efficient LLMs},
+  pdf={https://openreview.net/pdf?id=126PpV2CoO},
+  selected=true,
+  abbr={ICLR},
+  abstract={Text generation with Large Language Models (LLMs) is known to be memory bound due to the combination of their auto-regressive nature, huge parameter counts, and limited memory bandwidths, often resulting in low token rates. Speculative decoding has been proposed as a solution for LLM inference acceleration. However, since draft models are often unavailable in the modern open-source LLM families, e.g., for Llama 2 7B, training a high-quality draft model is required to enable inference acceleration via speculative decoding. In this paper, we propose a simple draft model training framework for direct alignment to chat-capable target models. With the proposed framework, we train Llama 2 Chat Drafter 115M, a draft model for Llama 2 Chat 7B or larger, with only 1.64% of the original size. Our training framework only consists of pretraining, distillation dataset generation, and finetuning with knowledge distillation, with no additional alignment procedure. For the finetuning step, we use instruction-response pairs generated by target model for distillation in plausible data distribution, and propose a new Total Variation Distance++ (TVD++) loss that incorporates variance reduction techniques inspired from the policy gradient method in reinforcement learning. Our empirical results show that Llama 2 Chat Drafter 115M with speculative decoding achieves up to 2.3 block efficiency and 2.4
+ speed-up relative to autoregressive decoding on various tasks with no further task-specific fine-tuning.},
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers}
+
+
+### MLCO papers ####
+
+@article{jeon2022neural,
+  title={Neural DAG scheduling via one-shot priority sampling},
+  author={Jeon*, Wonseok and Gagrani*, Mukul and Bartan, Burak and Zeng, Weiliang Will and Teague, Harris and Zappi, Piero and Lott, Christopher},
+  journal={ICLR},
+  year={2022},
+  area={ML for Combinatorial Optimization},
+  selected=true,
+  abbr={ICLR},
+  pdf={https://openreview.net/pdf?id=WL8FlAugqQ},
+  abstract={We consider the problem of scheduling operations/nodes, the dependency among
+which is characterized by a Directed Acyclic Graph (DAG). Due to its NP-hard
+nature, heuristic algorithms were traditionally used to acquire reasonably good solutions, and more recent works have proposed Machine Learning (ML) heuristics that
+can generalize to unseen graphs and outperform the non-ML heuristics. However,
+it is computationally costly to generate solutions using existing ML schedulers
+since they adopt the episodic reinforcement learning framework that necessitates
+multi-round neural network processing. We propose a novel ML scheduler that
+uses a one-shot neural network encoder to sample node priorities which are converted by list scheduling to the final schedules. Since the one-shot encoder can
+efficiently sample the priorities in parallel, our algorithm runs significantly faster
+than existing ML baselines and has comparable run time with the fast traditional
+heuristics. We empirically show that our algorithm generates better schedules
+than both non-neural and neural baselines across various real-world and synthetic
+scheduling tasks.},
+preview={dag_scheduling.png},
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.},
-  location={New Jersey},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  altmetric={248277},
-  dimensions={true},
-  google_scholar_id={qyhmnyLat1gC},
-  video={https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info={. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  selected={true}
+@article{gagrani2022neural,
+  title={Neural topological ordering for computation graphs},
+  author={Gagrani, Mukul and Rainone, Corrado and Yang, Yang and Teague, Harris and Jeon, Wonseok and Van Hoof, Herke and Zeng, Will and Zappi, Piero and Lott, Christopher and Bondesan, Roberto},
+  journal={NeurIPS},
+  year={2022},
+  area={ML for Combinatorial Optimization},
+  selected=true,
+  abbr={NeurIPS},
+  abstract={Recent works on machine learning for combinatorial optimization have shown that
+learning based approaches can outperform heuristic methods in terms of speed and
+performance. In this paper, we consider the problem of finding an optimal topological order on a directed acyclic graph with focus on the memory minimization
+problem which arises in compilers. We propose an end-to-end machine learning
+based approach for topological ordering using an encoder-decoder framework.
+Our encoder is a novel attention based graph neural network architecture called
+Topoformer which uses different topological transforms of a DAG for message
+passing. The node embeddings produced by the encoder are converted into node
+priorities which are used by the decoder to generate a probability distribution over
+topological orders. We train our model on a dataset of synthetically generated
+graphs called layered graphs. We show that our model outperforms, or is on-par,
+with several topological ordering baselines while being significantly faster on synthetic graphs with up to 2k nodes. We also train and test our model on a set of
+real-world computation graphs, showing performance improvements.},
+  pdf={https://openreview.net/pdf?id=EvtEGQmXe3},
+  preview={topoformer.png},
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik},
-  volume={322},
+
+#### Online learning #####
+
+@inproceedings{gagrani2022modified,
+  title={A modified Thompson sampling-based learning algorithm for unknown linear systems},
+  author={Gagrani, Mukul and Sudhakara, Sagar and Mahajan, Aditya and Nayyar, Ashutosh and Ouyang, Yi},
+  booktitle={2022 IEEE 61st Conference on Decision and Control (CDC)},
+  pages={6658--6665},
+  year={2022},
+  organization={IEEE},
+  area={Online Learning},
+  pdf={https://arxiv.org/pdf/2108.08502},
+}
+
+@inproceedings{gagrani2021thompson,
+  title={Thompson sampling for linear quadratic mean-field teams},
+  author={Gagrani, Mukul and Sudhakara, Sagar and Mahajan, Aditya and Nayyar, Ashutosh and Ouyang, Yi},
+  booktitle={2021 60th IEEE Conference on Decision and Control (CDC)},
+  pages={720--727},
+  year={2021},
+  organization={IEEE},
+  area={Online Learning},
+  pdf={https://arxiv.org/pdf/2011.04686},
+}
+
+@article{gagrani2021relaxed,
+  title={A relaxed technical assumption for posterior sampling-based reinforcement learning for control of unknown linear systems},
+  author={Gagrani, Mukul and Sudhakara, Sagar and Mahajan, Aditya and Nayyar, Ashutosh and Ouyang, Yi},
+  journal={arXiv preprint arXiv:2108.08502},
+  year={2021},
+  area={Online Learning},
+}
+
+
+@inproceedings{asghari2020regret,
+  title={Regret analysis for learning in a multi-agent linear-quadratic control problem},
+  author={Asghari, Seyed Mohammad and Gagrani, Mukul and Nayyar, Ashutosh},
+  booktitle={2020 American Control Conference (ACC)},
+  pages={3926--3931},
+  year={2020},
+  organization={IEEE},
+  area={Online Learning},
+  pdf={https://par.nsf.gov/servlets/purl/10213782},
+}
+
+@article{ouyang2019posterior,
+  title={Posterior sampling-based reinforcement learning for control of unknown linear systems},
+  author={Ouyang, Yi and Gagrani, Mukul and Jain, Rahul},
+  journal={IEEE Transactions on Automatic Control},
+  volume={65},
   number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+  pages={3600--3607},
+  year={2019},
+  publisher={IEEE},
+  area={Online Learning},
+  selected=true,
+  html={https://ieeexplore.ieee.org/abstract/document/8884712},
+  abstract={We propose a posterior sampling-based learning algorithm for the linear quadratic (LQ) control problem with unknown system parameters. The algorithm is called posterior sampling-based reinforcement learning for LQ regulator (PSRL-LQ) where two stopping criteria determine the lengths of the dynamic episodes in posterior sampling. The first stopping criterion controls the growth rate of episode length. The second stopping criterion is triggered when the determinant of the sample covariance matrix is less than half of the previous value. We show under some conditions on the prior distribution that the expected (Bayesian) regret of PSRL-LQ accumulated up to time T is bounded by O~(T−−√). Here, O~(⋅) hides constants and logarithmic factors. Numerical simulations are provided to illustrate the performance of PSRL-LQ.},
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+@inproceedings{gagrani2018thompson,
+  title={Thompson sampling for some decentralized control problems},
+  author={Gagrani, Mukul and Nayyar, Ashutosh},
+  booktitle={2018 IEEE Conference on Decision and Control (CDC)},
+  pages={1053--1058},
+  year={2018},
+  organization={IEEE},
+  area={Online Learning},
+  html={https://ieeexplore.ieee.org/abstract/document/8619423},
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{ouyang2017learning,
+  title={Learning-based control of unknown linear systems with thompson sampling},
+  author={Ouyang, Yi and Gagrani, Mukul and Jain, Rahul},
+  journal={arXiv preprint arXiv:1709.04047},
+  year={2017},
+  area={Online Learning},
+  pdf={https://arxiv.org/pdf/1709.04047},
 }
 
-@Article{einstein1905photoelectriceffect,
-  bibtex_show={true},
-  abbr={Ann. Phys.},
-  title="{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}",
-  author={Albert Einstein},
-  abstract={This is the abstract text.},
-  journal={Ann. Phys.},
-  volume={322},
-  number={6},
-  pages={132--148},
-  year={1905},
-  doi={10.1002/andp.19053220607},
-  award={Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name={Nobel Prize}
+@article{ouyang2017learning,
+  title={Learning unknown markov decision processes: A thompson sampling approach},
+  author={Ouyang, Yi and Gagrani, Mukul and Nayyar, Ashutosh and Jain, Rahul},
+  journal={NeurIPS},
+  volume={30},
+  year={2017},
+  area={Online Learning},
+  selected=true,
+  pdf={https://proceedings.neurips.cc/paper_files/paper/2017/file/51ef186e18dc00c2d31982567235c559-Paper.pdf},
+  abstract={We consider the problem of learning an unknown Markov Decision Process (MDP) that is weakly communicating in the infinite horizon setting. We propose a Thompson Sampling-based reinforcement learning algorithm with dynamic episodes (TSDE). At the beginning of each episode, the algorithm generates a sample from the posterior distribution over the unknown model parameters. It then follows the optimal stationary policy for the sampled model for the rest of the episode. The duration of each episode is dynamically determined by two stopping criteria. The first stopping criterion controls the growth rate of episode length. The second stopping criterion happens when the number of visits to any state-action pair is doubled. We establish  bounds on expected regret under a Bayesian setting, where  and  are the sizes of the state and action spaces,  is time, and  is the bound of the span. This regret bound matches the best available bound for weakly communicating MDPs. Numerical results show it to perform better than existing algorithms for infinite horizon MDPs.},
+  preview={tsde_regret.png},
+  html={https://proceedings.neurips.cc/paper_files/paper/2017/hash/51ef186e18dc00c2d31982567235c559-Abstract.html},
+  abbr={NeurIPS}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif},
-  abbr={Vision}
+@inproceedings{ouyang2017control,
+  title={Control of unknown linear systems with thompson sampling},
+  author={Ouyang, Yi and Gagrani, Mukul and Jain, Rahul},
+  booktitle={2017 55th Annual Allerton Conference on Communication, Control, and Computing (Allerton)},
+  pages={1198--1205},
+  year={2017},
+  organization={IEEE},
+  area={Online Learning},
+  html={https://ieeexplore.ieee.org/abstract/document/8262873/},
+}
+
+
+
+
+
+### Control and communications ####
+
+
+
+@inproceedings{gagrani2020weakly,
+  title={Weakly coupled constrained Markov decision processes in Borel spaces},
+  author={Gagrani, Mukul and Nayyar, Ashutosh},
+  booktitle={2020 American Control Conference (ACC)},
+  pages={2790--2795},
+  year={2020},
+  organization={IEEE},
+  area={Stochastic Control and Communications},
+  pdf={https://par.nsf.gov/servlets/purl/10213781},
+}
+
+@article{gagrani2020worst,
+  title={Worst-case guarantees for remote estimation of an uncertain source},
+  author={Gagrani, Mukul and Ouyang, Yi and Rasouli, Mohammad and Nayyar, Ashutosh},
+  journal={IEEE Transactions on Automatic Control},
+  volume={66},
+  number={4},
+  pages={1794--1801},
+  year={2020},
+  publisher={IEEE},
+  area={Stochastic Control and Communications},
+  pdf={https://arxiv.org/pdf/1902.03339},
+}
+
+@article{vasconcelos2020optimal,
+  title={Optimal scheduling strategy for networked estimation with energy harvesting},
+  author={Vasconcelos, Marcos M and Gagrani, Mukul and Nayyar, Ashutosh and Mitra, Urbashi},
+  journal={IEEE Transactions on Control of Network Systems},
+  volume={7},
+  number={4},
+  pages={1723--1735},
+  year={2020},
+  publisher={IEEE},
+  area={Stochastic Control and Communications},
+  html={https://ieeexplore.ieee.org/abstract/document/9099382},
+}
+
+@inproceedings{gagrani2018scheduling,
+  title={Scheduling and estimation strategies in a sequential networked estimation problem},
+  author={Gagrani, Mukul and Vasconcelos, Marcos M and Nayyar, Ashutosh},
+  booktitle={2018 56th Annual Allerton Conference on Communication, Control, and Computing (Allerton)},
+  pages={871--878},
+  year={2018},
+  organization={IEEE},
+  area={Stochastic Control and Communications},
+  html={https://ieeexplore.ieee.org/abstract/document/8636085},
+
+}
+
+
+@inproceedings{gagrani2017decentralized,
+  title={Decentralized minimax control problems with partial history sharing},
+  author={Gagrani, Mukul and Nayyar, Ashutosh},
+  booktitle={2017 American Control Conference (ACC)},
+  pages={3373--3379},
+  year={2017},
+  organization={IEEE},
+  area={Stochastic Control and Communications},
+  html={https://ieeexplore.ieee.org/abstract/document/7963468/},
+}
+
+@techreport{gagrani2016centralized,
+  title={Centralized minimax control},
+  author={Gagrani, Mukul and Nayyar, Ashutosh},
+  year={2016},
+  institution={Technical report CENG-2016-02, Sep 2016, http://ceng. usc. edu/techreports~…},
+  area={Stochastic Control and Communications},
+  pdf={https://ceng.usc.edu/techreports/2016/Nayyar%20CENG-2016-02.pdf},
+}
+
+@article{gagrani2014transmit,
+  title={Transmit and receive antenna pairing in MIMO relay networks},
+  author={Gagrani, Mukul and Chaturvedi, Ajit Kumar},
+  journal={IEEE Communications Letters},
+  volume={18},
+  number={11},
+  pages={2043--2046},
+  year={2014},
+  publisher={IEEE},
+  area={Stochastic Control and Communications},
+  pdf={https://home.iitk.ac.in/~akc/pdfs/Mukul_14.pdf},
+}
+
+@inproceedings{gagrani2011noise,
+  title={On noise-enhanced distributed inference in the presence of Byzantines},
+  author={Gagrani, Mukul and Sharma, Pranay and Iyengar, Satish and Nadendla, V Sriram Siddhardh and Vempaty, Aditya and Chen, Hao and Varshney, Pramod K},
+  booktitle={2011 49th Annual Allerton Conference on Communication, Control, and Computing (Allerton)},
+  pages={1222--1229},
+  year={2011},
+  organization={IEEE},
+  area={Stochastic Control and Communications},
+  pdf={https://surface.syr.edu/cgi/viewcontent.cgi?article=1219&context=eecs},
 }
