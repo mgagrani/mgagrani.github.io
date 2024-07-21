@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 #subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
-subtitle: Deep Learning Researcher/Engineer
+subtitle: Machine Learning Researcher/Scientist
  
 profile:
   align: right
