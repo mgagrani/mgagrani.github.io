@@ -7,7 +7,7 @@ subtitle: Machine Learning Researcher/Scientist
  
 profile:
   align: right
-  image: head_crop.JPG
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   # more_info: >
   #   <p>555 your office number</p>
