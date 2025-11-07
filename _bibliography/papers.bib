@@ -1,4 +1,27 @@
 ### LLM papers ####
+@article{vocabtrim,
+  title={VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs},
+  author={Goel, Raghavv and Agrawal, Sudhanshu and Gagrani, Mukul and Park, Junyoung and Zao, Yifan and Zhang, He and Liu, Tian and Yang, Yiping and Yuan, Xin and Lu, Jiuyuan and Lott, Christopher and Lee, Mingu},
+  journal={ICML Workshop on Efficient Systems for Foundational Models},
+  year={2025},
+  area={Efficient LLMs},
+  selected=true,
+  abbr={ICML},
+  pdf={https://arxiv.org/pdf/2506.22694},
+  abstract={In this paper, we introduce a simple training-free technique to improve the performance of drafter-based speculative decoding (SpD) methods that incorporates language modeling head (LM head) during drafting process. A drafter-based speculative decoding leverages one or more smaller language models, a.k.a. drafters or draft models, to sample a draft sequence or tree consisting of multiple tokens, followed by verification by a base LLM, a target model, accepting a subset as its valid generation. As it is usually considered that the speculative decoding requires one-to-one mapping between vocabularies of the target model and the draft model, it has been natural to share the vocabulary between them, or even share the LM head as in EAGLE or Medusa. We first identify that this draft token sampling scheme inherently contains an unnecessary inference overhead in drafting, especially for some target LLMs with very large vocabularies. Then, we propose a simple technique, VocabTrim, to mitigate the drafting overhead to improve the generation speed in memory-bound environment. VocabTrim reconstructs the drafter LM head to contain only a limited set of tokens, selected by the most frequently sampled from the vocabulary of the target model. While limiting the vocabulary in drafting slightly degrades the acceptance rate, it significantly reduces the drafting latency in memory-bound process which is often the case on edge devices, resulting in higher memory-bound speed up (MBSU). We show that our method can boost the memory-bound speed-up for Llama-3 models on Spec-Bench, specifically by 16% for Llama-3.2-3B-Instruct.},
+  }
+
+@article{caote,
+  title={CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction},
+  author={Goel, Raghavv and Park, Junyoung and Gagrani, Mukul and Jones, Dalton and Morse, Matthew and Langston, Harper and Lee, Mingu and Lott, Christopher},
+  journal={Submitted to MLSys},
+  year={2025},
+  area={Efficient LLMs},
+  selected=true,
+  pdf={https://arxiv.org/pdf/2504.14051},
+  abstract={While long context support of large language models has extended their abilities, it also incurs challenges in memory and compute which becomes crucial bottlenecks in resource-restricted devices. Token eviction, a widely adopted post-training methodology designed to alleviate the bottlenecks by evicting less important tokens from the cache, typically uses attention scores as proxy metrics for token importance. However, one major limitation of attention score as a token-wise importance metrics is that it lacks the information about contribution of tokens to the attention output. In this paper, we propose a simple eviction criterion based on the contribution of cached tokens to attention outputs. Our method, CAOTE, optimizes for eviction error due to token eviction, by seamlessly integrating attention scores and value vectors. This is the first method which uses value vector information on top of attention-based eviction scores. Additionally, CAOTE can act as a meta-heuristic method with flexible usage with any token eviction method. We show that CAOTE, when combined with the state-of-the-art attention score-based methods, always improves accuracies on the downstream task, indicating the importance of leveraging information from values during token eviction process},
+  }
+
 @article{gagrani2024speculative,
   title={On Speculative Decoding for Multimodal Large Language Models},
   author={Gagrani*, Mukul and Goel*, Raghavv and Jeon, Wonseok and Park, Junyoung and Lee, Mingu and Lott, Christopher},
