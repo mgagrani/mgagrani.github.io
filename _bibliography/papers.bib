@@ -1,4 +1,26 @@
 ### LLM papers ####
+@article{fastforward,
+title={Fast Forward: Accelerating LLM Prefill with Predictive FFN Sparsity},
+author={Gautam, Aayush and Gagrani, Mukul and Park, Junyoung and Lee, Mingu and Lott, Christopher and Reddy, Narasimha},
+journal={arXiv},
+year={2026},
+area={Efficient LLMs},
+selected=true,
+pdf={https://arxiv.org/pdf/2602.00397},
+abstract={The prefill stage of large language model (LLM) inference is a key computational bottleneck for long-context
+workloads. At short-to-moderate context lengths (1K–16K tokens), Feed-Forward Networks (FFNs) dominate this
+cost, accounting for most of the total FLOPs. Existing FFN sparsification methods, designed for autoregressive
+decoding, fail to exploit the prefill stage’s parallelism and often degrade accuracy. To address this, we introduce
+FastForward, a predictive sparsity framework that accelerates LLM prefill through block-wise, context-aware FFN
+sparsity. FastForward combines (1) a lightweight expert predictor to select high-importance neurons per block,
+(2) an error compensation network to correct sparsity-induced errors, and (3) a layer-wise sparsity scheduler to
+allocate compute based on token-mixing importance. Across LLaMA and Qwen models up to 8B parameters,
+FastForward delivers up to 1.45× compute-bound speedup at 50% FFN sparsity with < 6% accuracy loss compared
+to the dense baseline on LongBench, substantially reducing Time-to-First-Token (TTFT) for efficient, long-context
+LLM inference on constrained hardware.}
+}
+
+
 @article{vocabtrim,
   title={VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs},
   author={Goel, Raghavv and Agrawal, Sudhanshu and Gagrani, Mukul and Park, Junyoung and Zao, Yifan and Zhang, He and Liu, Tian and Yang, Yiping and Yuan, Xin and Lu, Jiuyuan and Lott, Christopher and Lee, Mingu},
