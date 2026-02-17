@@ -208,6 +208,7 @@ exclude:
   - _pages/dropdown
   - _pages/repositories
   - _pages/cv
+  - _pages/news
 keep_files:
   - CNAME
   - .nojekyll
