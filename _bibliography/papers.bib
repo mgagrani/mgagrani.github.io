@@ -6,6 +6,7 @@ journal={PrePrint},
 year={2026},
 area={Efficient LLMs},
 selected=true,
+preview={fast_forward_paper.png},
 pdf={https://arxiv.org/pdf/2602.00397},
 abstract={The prefill stage of large language model (LLM) inference is a key computational bottleneck for long-context
 workloads. At short-to-moderate context lengths (1K–16K tokens), Feed-Forward Networks (FFNs) dominate this
@@ -40,6 +41,7 @@ LLM inference on constrained hardware.}
   year={2025},
   area={Efficient LLMs},
   selected=true,
+  preview={caote_paper.png},
   pdf={https://arxiv.org/pdf/2504.14051},
   abstract={While long context support of large language models has extended their abilities, it also incurs challenges in memory and compute which becomes crucial bottlenecks in resource-restricted devices. Token eviction, a widely adopted post-training methodology designed to alleviate the bottlenecks by evicting less important tokens from the cache, typically uses attention scores as proxy metrics for token importance. However, one major limitation of attention score as a token-wise importance metrics is that it lacks the information about contribution of tokens to the attention output. In this paper, we propose a simple eviction criterion based on the contribution of cached tokens to attention outputs. Our method, CAOTE, optimizes for eviction error due to token eviction, by seamlessly integrating attention scores and value vectors. This is the first method which uses value vector information on top of attention-based eviction scores. Additionally, CAOTE can act as a meta-heuristic method with flexible usage with any token eviction method. We show that CAOTE, when combined with the state-of-the-art attention score-based methods, always improves accuracies on the downstream task, indicating the importance of leveraging information from values during token eviction process},
   }
