@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
 announcements:
@@ -34,6 +34,18 @@ Before shifting focus to LLM efficiency, I worked on Machine Learning for Combin
 
 I obtained my PhD in Electrical & Computer Engineering from University of Southern California (USC) in 2020 under the supervision of [Dr. Ashutosh Nayyar](https://sites.google.com/usc.edu/ashutosh) and [Dr. Rahul Jain](https://www.rahuljain.net/). Before that, I finished my undergrad in Electrical Engineering from [IIT Kanpur](https://www.iitk.ac.in) in 2013.
 
-<!-- I currently work on improving the inference efficiency of Large Language Models (LLMs) for their deployment on edge. In particular, I have worked on developing speculative decoding methods, KV cache compression and FFN sparsity in LLMs. In the past I have worked on Machine Learning for Combinatorial Optimization, Reinforcement Learning and stochastic control.  -->
+## selected publications
+
+### Efficient LLMs
+{% bibliography --query @*[selected=true][area = "Efficient LLMs"]* %}
+
+### ML for Combinatorial Optimization
+{% bibliography --query @*[selected=true][area = "ML for Combinatorial Optimization"]* %}
+
+### Online/Reinforcement Learning
+{% bibliography --query @*[selected=true][area = "Online Learning"]* %}
+
+<!-- ### Stochastic Control and Communications
+{% bibliography --query @*[selected=true][area = "Stochastic Control and Communications"]* %} -->
 
 
