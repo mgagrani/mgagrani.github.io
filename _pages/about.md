@@ -27,4 +27,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a research scientic at Qualcomm AI research
+I am a staff research sceintist at [Qualcomm AI research](https://www.qualcomm.com/research/artificial-intelligence/ai-research). I currently work on improving the inference efficiency of Large Language Models (LLMs) for their deployment on edge. In particular, I have worked on developing speculative decoding methods, KV cache compression and FFN sparsity in LLMs. In the past I have worked on Machine Learning for Combinatorial Optimization, Reinforcement Learning and stochastic control. 
+
+I obtained my PhD in Electrical & Computer Engineering from University of Southern California (USC) in 2020 under the supervision of [Dr. Ashutosh Nayyar](https://sites.google.com/usc.edu/ashutosh) and [Dr. Rahul Jain](https://www.rahuljain.net/). Before that, I finished my undergrad in Electrical Engineering from [IIT Kanpur](https://www.iitk.ac.in) in 2013.
