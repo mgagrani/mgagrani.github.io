@@ -32,6 +32,6 @@ I am a staff research scientist at [Qualcomm AI research](https://www.qualcomm.c
  
 Before shifting focus to LLM efficiency, I worked on Machine Learning for Combinatorial Optimization, where I developed neural architectures like [Topoformer](https://openreview.net/pdf?id=EvtEGQmXe3) for computation graph scheduling in ML compilers. My PhD work focused on Reinforcement Learning and stochastic control, specifically [Thompson sampling for unknown Markov Decision Processes](https://proceedings.neurips.cc/paper_files/paper/2017/file/51ef186e18dc00c2d31982567235c559-Paper.pdf) and [Linear Systems](https://arxiv.org/pdf/1709.04047). 
 
-I obtained my PhD in Electrical & Computer Engineering from University of Southern California (USC) in 2020 under the supervision of [Dr. Ashutosh Nayyar](https://sites.google.com/usc.edu/ashutosh) and [Dr. Rahul Jain](https://www.rahuljain.net/). Before that, I finished my undergrad in Electrical Engineering from [IIT Kanpur](https://www.iitk.ac.in) in 2013.
+I obtained my PhD in Electrical & Computer Engineering from [USC](https://minghsiehece.usc.edu/) in 2020 under the supervision of [Dr. Ashutosh Nayyar](https://sites.google.com/usc.edu/ashutosh) & [Dr. Rahul Jain](https://www.rahuljain.net/). I finished my undergrad in Electrical Engineering from [IIT Kanpur](https://www.iitk.ac.in) in 2013.
 
 
