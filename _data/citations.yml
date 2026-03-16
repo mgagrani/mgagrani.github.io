@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-03-04'
+  last_updated: '2026-03-16'
 papers:
+  ERZXPy4AAAAJ:-f6ydRqryjwC:
+    citations: 0
+    title: 'ConFu: Contemplate the Future for Better Speculative Sampling'
+    year: '2026'
   ERZXPy4AAAAJ:0EnyYjriUFMC:
     citations: 1
     title: Scheduling optimization in sequence space
@@ -42,7 +46,7 @@ papers:
     title: Thompson sampling for some decentralized control problems
     year: '2018'
   ERZXPy4AAAAJ:KlAtU1dfN6UC:
-    citations: 34
+    citations: 35
     title: On speculative decoding for multimodal large language models
     year: '2024'
   ERZXPy4AAAAJ:L8Ckcad2t8MC:
@@ -112,6 +116,10 @@ papers:
   ERZXPy4AAAAJ:hC7cP41nSMkC:
     citations: 0
     title: Efficient machine learning caching via attention output-based token eviction
+    year: '2026'
+  ERZXPy4AAAAJ:hFOr9nPyWt4C:
+    citations: 0
+    title: Efficient attention in transformer neural networks using state space models
     year: '2026'
   ERZXPy4AAAAJ:hqOjcs7Dif8C:
     citations: 1
