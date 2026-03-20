@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-16'
+  last_updated: '2026-03-20'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -94,7 +94,7 @@ papers:
     title: Regret analysis for learning in a multi-agent linear-quadratic control problem
     year: '2020'
   ERZXPy4AAAAJ:ZeXyd9-uunAC:
-    citations: 0
+    citations: 1
     title: 'CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction'
     year: '2025'
   ERZXPy4AAAAJ:aqlVkmm33-oC:
@@ -129,6 +129,10 @@ papers:
     citations: 0
     title: Robust scheduling with generative flow networks
     year: '2024'
+  ERZXPy4AAAAJ:mB3voiENLucC:
+    citations: 0
+    title: 'CAOTE: Optimizing KV Cache Memory Through Attention Output Error-based Token Eviction'
+    year: Unknown Year
   ERZXPy4AAAAJ:qUcmZB5y_30C:
     citations: 0
     title: Memory-constrained attention in machine learning models
