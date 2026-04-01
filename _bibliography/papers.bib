@@ -30,6 +30,7 @@ LLM inference on constrained hardware.}
   selected=true,
   abbr={ICLR},
   pdf={https://arxiv.org/pdf/2603.08899},
+  preview={confu.png},
   abstract={Speculative decoding has emerged as a powerful approach to accelerate large language model (LLM) inference by employing lightweight draft models to propose candidate tokens that are subsequently verified by the target model. The effectiveness of this paradigm critically depends on the quality of the draft model. While recent advances such as the EAGLE series achieve state-of-the-art speedup, existing draft models remain limited by error accumulation: they condition only on the current prefix, causing their predictions to drift from the target model over steps. In this work, we propose \textbf{ConFu} (Contemplate the Future), a novel speculative decoding framework that enables draft models to anticipate the future direction of generation. ConFu introduces (i) contemplate tokens and soft prompts that allow the draft model to leverage future-oriented signals from the target model at negligible cost, (ii) a dynamic contemplate token mechanism with MoE to enable context-aware future prediction, and (iii) a training framework with anchor token sampling and future prediction replication that learns robust future prediction. Experiments demonstrate that ConFu improves token acceptance rates and generation speed over EAGLE-3 by 8--11% across various downstream tasks with Llama-3 3B and 8B models. We believe our work is the first to bridge speculative decoding with continuous reasoning tokens, offering a new direction for accelerating LLM inference.},
   }
 
@@ -60,8 +61,8 @@ LLM inference on constrained hardware.}
 @article{caote,
   title={CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction},
   author={Goel, Raghavv and Park, Junyoung and Gagrani, Mukul and Jones, Dalton and Morse, Matthew and Langston, Harper and Lee, Mingu and Lott, Christopher},
-  journal={ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems},
-  year={2025},
+  journal={ICLR Workshop on Memory for LLM-Based Agentic Systems},
+  year={2026},
   area={Efficient LLMs},
   selected=true,
   preview={caote_paper.png},
