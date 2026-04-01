@@ -21,6 +21,29 @@ to the dense baseline on LongBench, substantially reducing Time-to-First-Token (
 LLM inference on constrained hardware.}
 }
 
+@article{confu,
+  title={ConFu: Contemplate the Future for Better Speculative Sampling},
+  author={Qin, Zongyue and Goel, Raghavv and Gagrani, Mukul and Garrepalli, Risheek and Lee, Mingu and Sun, Yizhou},
+  journal={ICLR LIT Workshop},
+  year={2026},
+  area={Efficient LLMs},
+  selected=true,
+  abbr={ICLR},
+  pdf={https://arxiv.org/pdf/2603.08899},
+  abstract={Speculative decoding has emerged as a powerful approach to accelerate large language model (LLM) inference by employing lightweight draft models to propose candidate tokens that are subsequently verified by the target model. The effectiveness of this paradigm critically depends on the quality of the draft model. While recent advances such as the EAGLE series achieve state-of-the-art speedup, existing draft models remain limited by error accumulation: they condition only on the current prefix, causing their predictions to drift from the target model over steps. In this work, we propose \textbf{ConFu} (Contemplate the Future), a novel speculative decoding framework that enables draft models to anticipate the future direction of generation. ConFu introduces (i) contemplate tokens and soft prompts that allow the draft model to leverage future-oriented signals from the target model at negligible cost, (ii) a dynamic contemplate token mechanism with MoE to enable context-aware future prediction, and (iii) a training framework with anchor token sampling and future prediction replication that learns robust future prediction. Experiments demonstrate that ConFu improves token acceptance rates and generation speed over EAGLE-3 by 8--11% across various downstream tasks with Llama-3 3B and 8B models. We believe our work is the first to bridge speculative decoding with continuous reasoning tokens, offering a new direction for accelerating LLM inference.},
+  }
+
+
+@article{ssd,
+  title={Efficient Training-Free Multi-Token Prediction via Embedding-Space Probing},
+  author={Goel, Raghavv and Gagrani, Mukul and Lee, Mingu and Lott, Chris},
+  journal={PrePrint},
+  year={2026},
+  area={Efficient LLMs},
+  selected=true,
+  pdf={https://arxiv.org/pdf/2603.17942},
+  abstract={Large language models (LLMs) exhibit latent multi-token prediction (MTP) capabilities despite being trained solely for next-token generation. We propose a simple, training-free MTP approach that probes an LLM using on-the-fly mask tokens drawn from its embedding space, enabling parallel prediction of future tokens without modifying model weights or relying on auxiliary draft models. Our method constructs a speculative token tree by sampling top-K candidates from mask-token logits and applies a lightweight pruning strategy to retain high-probability continuations. During decoding, candidate predictions are verified in parallel, resulting in lossless generation while substantially reducing the number of model calls and improving token throughput. Across benchmarks, our probing-based MTP consistently outperforms existing training-free baselines, increasing acceptance length by approximately 12\% on LLaMA3 and 8--12\% on Qwen3, and achieving throughput gains of up to 15--19\%. Finally, we provide theoretical insights and empirical evidence showing that decoder layers naturally align mask-token representations with next-token states, enabling accurate multi-step prediction without retraining or auxiliary models.},
+ }
 
 @article{vocabtrim,
   title={VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs},
@@ -37,11 +60,12 @@ LLM inference on constrained hardware.}
 @article{caote,
   title={CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction},
   author={Goel, Raghavv and Park, Junyoung and Gagrani, Mukul and Jones, Dalton and Morse, Matthew and Langston, Harper and Lee, Mingu and Lott, Christopher},
-  journal={PrePrint},
+  journal={ICLR 2026 Workshop on Memory for LLM-Based Agentic Systems},
   year={2025},
   area={Efficient LLMs},
   selected=true,
   preview={caote_paper.png},
+  abbr={ICLR},
   pdf={https://arxiv.org/pdf/2504.14051},
   abstract={While long context support of large language models has extended their abilities, it also incurs challenges in memory and compute which becomes crucial bottlenecks in resource-restricted devices. Token eviction, a widely adopted post-training methodology designed to alleviate the bottlenecks by evicting less important tokens from the cache, typically uses attention scores as proxy metrics for token importance. However, one major limitation of attention score as a token-wise importance metrics is that it lacks the information about contribution of tokens to the attention output. In this paper, we propose a simple eviction criterion based on the contribution of cached tokens to attention outputs. Our method, CAOTE, optimizes for eviction error due to token eviction, by seamlessly integrating attention scores and value vectors. This is the first method which uses value vector information on top of attention-based eviction scores. Additionally, CAOTE can act as a meta-heuristic method with flexible usage with any token eviction method. We show that CAOTE, when combined with the state-of-the-art attention score-based methods, always improves accuracies on the downstream task, indicating the importance of leveraging information from values during token eviction process},
   }
@@ -63,7 +87,7 @@ LLM inference on constrained hardware.}
 @article{jeon2024recursive,
   title={Recursive Speculative Decoding: Accelerating LLM Inference via Sampling Without Replacement},
   author={Jeon, Wonseok and Gagrani, Mukul and Goel, Raghavv and Park, Junyoung and Lee, Mingu and Lott, Christopher},
-  journal={ICLR LLM Agents Workshop, 2024},
+  journal={ICLR LLM Agents Workshop},
   year={2024},
   area={Efficient LLMs},
   abbr={ICLR},
