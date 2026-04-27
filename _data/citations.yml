@@ -1,16 +1,16 @@
 metadata:
-  last_updated: '2026-04-03'
+  last_updated: '2026-04-27'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
     title: 'ConFu: Contemplate the Future for Better Speculative Sampling'
     year: '2026'
   ERZXPy4AAAAJ:0EnyYjriUFMC:
-    citations: 1
+    citations: 0
     title: Scheduling optimization in sequence space
     year: '2024'
   ERZXPy4AAAAJ:2osOgNQ5qMEC:
-    citations: 63
+    citations: 64
     title: Learning-based control of unknown linear systems with thompson sampling
     year: '2017'
   ERZXPy4AAAAJ:3fE2CSJIrl8C:
@@ -26,7 +26,7 @@ papers:
     title: Efficient machine learning caching via attention output-based token eviction
     year: '2026'
   ERZXPy4AAAAJ:8k81kl-MbHgC:
-    citations: 24
+    citations: 25
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
@@ -50,7 +50,7 @@ papers:
     title: Thompson sampling for some decentralized control problems
     year: '2018'
   ERZXPy4AAAAJ:KlAtU1dfN6UC:
-    citations: 37
+    citations: 42
     title: On speculative decoding for multimodal large language models
     year: '2024'
   ERZXPy4AAAAJ:L8Ckcad2t8MC:
@@ -62,7 +62,7 @@ papers:
     title: A modified Thompson sampling-based learning algorithm for unknown linear systems
     year: '2022'
   ERZXPy4AAAAJ:MXK_kJrjxJIC:
-    citations: 10
+    citations: 11
     title: Direct alignment of draft model for speculative decoding with chat-fine-tuned llms
     year: '2024'
   ERZXPy4AAAAJ:Tyk-4Ss8FVUC:
@@ -142,7 +142,7 @@ papers:
     title: Memory-constrained attention in machine learning models
     year: '2026'
   ERZXPy4AAAAJ:qjMakFHDy7sC:
-    citations: 181
+    citations: 182
     title: 'Learning unknown markov decision processes: A thompson sampling approach'
     year: '2017'
   ERZXPy4AAAAJ:qxL8FJ1GzNcC:
@@ -150,7 +150,7 @@ papers:
     title: 'Caote: Kv caching through attention output error based token eviction'
     year: '2025'
   ERZXPy4AAAAJ:roLk4NBRz8UC:
-    citations: 8
+    citations: 9
     title: Neural DAG scheduling via one-shot priority sampling
     year: '2023'
   ERZXPy4AAAAJ:u-x6o8ySG0sC:
