@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-30'
+  last_updated: '2026-05-04'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -10,7 +10,7 @@ papers:
     title: Scheduling optimization in sequence space
     year: '2024'
   ERZXPy4AAAAJ:2osOgNQ5qMEC:
-    citations: 63
+    citations: 64
     title: Learning-based control of unknown linear systems with thompson sampling
     year: '2017'
   ERZXPy4AAAAJ:3fE2CSJIrl8C:
@@ -26,7 +26,7 @@ papers:
     title: Efficient machine learning caching via attention output-based token eviction
     year: '2026'
   ERZXPy4AAAAJ:8k81kl-MbHgC:
-    citations: 24
+    citations: 26
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
@@ -50,7 +50,7 @@ papers:
     title: Thompson sampling for some decentralized control problems
     year: '2018'
   ERZXPy4AAAAJ:KlAtU1dfN6UC:
-    citations: 35
+    citations: 42
     title: On speculative decoding for multimodal large language models
     year: '2024'
   ERZXPy4AAAAJ:L8Ckcad2t8MC:
@@ -62,7 +62,7 @@ papers:
     title: A modified Thompson sampling-based learning algorithm for unknown linear systems
     year: '2022'
   ERZXPy4AAAAJ:MXK_kJrjxJIC:
-    citations: 10
+    citations: 12
     title: Direct alignment of draft model for speculative decoding with chat-fine-tuned llms
     year: '2024'
   ERZXPy4AAAAJ:Tyk-4Ss8FVUC:
@@ -86,7 +86,7 @@ papers:
     title: Thompson sampling for linear quadratic mean-field teams
     year: '2021'
   ERZXPy4AAAAJ:Wp0gIr-vW9MC:
-    citations: 1
+    citations: 2
     title: Efficient speculative decoding in autoregressive generative artificial intelligence models
     year: '2025'
   ERZXPy4AAAAJ:Y0pCki6q_DkC:
@@ -98,7 +98,7 @@ papers:
     title: Regret analysis for learning in a multi-agent linear-quadratic control problem
     year: '2020'
   ERZXPy4AAAAJ:ZeXyd9-uunAC:
-    citations: 1
+    citations: 2
     title: 'CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction'
     year: '2025'
   ERZXPy4AAAAJ:aqlVkmm33-oC:
@@ -142,7 +142,7 @@ papers:
     title: Memory-constrained attention in machine learning models
     year: '2026'
   ERZXPy4AAAAJ:qjMakFHDy7sC:
-    citations: 181
+    citations: 182
     title: 'Learning unknown markov decision processes: A thompson sampling approach'
     year: '2017'
   ERZXPy4AAAAJ:qxL8FJ1GzNcC:
@@ -150,7 +150,7 @@ papers:
     title: 'Caote: Kv caching through attention output error based token eviction'
     year: '2025'
   ERZXPy4AAAAJ:roLk4NBRz8UC:
-    citations: 8
+    citations: 9
     title: Neural DAG scheduling via one-shot priority sampling
     year: '2023'
   ERZXPy4AAAAJ:u-x6o8ySG0sC:
