@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-04'
+  last_updated: '2026-05-15'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -18,7 +18,7 @@ papers:
     title: Neural directed acyclic graph (dag) scheduling via one-shot priority sampling
     year: '2024'
   ERZXPy4AAAAJ:4DMP91E08xMC:
-    citations: 0
+    citations: 1
     title: Reinforced total variation distance loss for machine learning models
     year: '2025'
   ERZXPy4AAAAJ:7PzlFSSx8tAC:
@@ -26,7 +26,7 @@ papers:
     title: Efficient machine learning caching via attention output-based token eviction
     year: '2026'
   ERZXPy4AAAAJ:8k81kl-MbHgC:
-    citations: 26
+    citations: 27
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
@@ -65,6 +65,10 @@ papers:
     citations: 12
     title: Direct alignment of draft model for speculative decoding with chat-fine-tuned llms
     year: '2024'
+  ERZXPy4AAAAJ:TQgYirikUcIC:
+    citations: 5
+    title: Weiliang Will Zeng, Harris Teague, Piero Zappi, and Christopher Lott. Neural dag scheduling via one-shot priority sampling
+    year: '2023'
   ERZXPy4AAAAJ:Tyk-4Ss8FVUC:
     citations: 7
     title: Worst-case guarantees for remote estimation of an uncertain source
@@ -98,11 +102,11 @@ papers:
     title: Regret analysis for learning in a multi-agent linear-quadratic control problem
     year: '2020'
   ERZXPy4AAAAJ:ZeXyd9-uunAC:
-    citations: 2
+    citations: 5
     title: 'CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction'
     year: '2025'
   ERZXPy4AAAAJ:aqlVkmm33-oC:
-    citations: 2
+    citations: 3
     title: 'VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs'
     year: '2025'
   ERZXPy4AAAAJ:d1gkVwhDpl0C:
@@ -150,7 +154,7 @@ papers:
     title: 'Caote: Kv caching through attention output error based token eviction'
     year: '2025'
   ERZXPy4AAAAJ:roLk4NBRz8UC:
-    citations: 9
+    citations: 10
     title: Neural DAG scheduling via one-shot priority sampling
     year: '2023'
   ERZXPy4AAAAJ:u-x6o8ySG0sC:
