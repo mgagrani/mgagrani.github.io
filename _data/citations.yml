@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-03'
+  last_updated: '2026-06-10'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -26,7 +26,7 @@ papers:
     title: Efficient machine learning caching via attention output-based token eviction
     year: '2026'
   ERZXPy4AAAAJ:8k81kl-MbHgC:
-    citations: 28
+    citations: 30
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
@@ -62,7 +62,7 @@ papers:
     title: A modified Thompson sampling-based learning algorithm for unknown linear systems
     year: '2022'
   ERZXPy4AAAAJ:MXK_kJrjxJIC:
-    citations: 13
+    citations: 14
     title: Direct alignment of draft model for speculative decoding with chat-fine-tuned llms
     year: '2024'
   ERZXPy4AAAAJ:TQgYirikUcIC:
@@ -146,7 +146,7 @@ papers:
     title: Memory-constrained attention in machine learning models
     year: '2026'
   ERZXPy4AAAAJ:qjMakFHDy7sC:
-    citations: 183
+    citations: 184
     title: 'Learning unknown markov decision processes: A thompson sampling approach'
     year: '2017'
   ERZXPy4AAAAJ:qxL8FJ1GzNcC:
