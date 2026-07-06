@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-10'
+  last_updated: '2026-07-06'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -26,7 +26,7 @@ papers:
     title: Efficient machine learning caching via attention output-based token eviction
     year: '2026'
   ERZXPy4AAAAJ:8k81kl-MbHgC:
-    citations: 30
+    citations: 31
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
@@ -50,7 +50,7 @@ papers:
     title: Thompson sampling for some decentralized control problems
     year: '2018'
   ERZXPy4AAAAJ:KlAtU1dfN6UC:
-    citations: 43
+    citations: 45
     title: On speculative decoding for multimodal large language models
     year: '2024'
   ERZXPy4AAAAJ:L8Ckcad2t8MC:
@@ -62,11 +62,11 @@ papers:
     title: A modified Thompson sampling-based learning algorithm for unknown linear systems
     year: '2022'
   ERZXPy4AAAAJ:MXK_kJrjxJIC:
-    citations: 14
+    citations: 16
     title: Direct alignment of draft model for speculative decoding with chat-fine-tuned llms
     year: '2024'
   ERZXPy4AAAAJ:TQgYirikUcIC:
-    citations: 5
+    citations: 4
     title: Weiliang Will Zeng, Harris Teague, Piero Zappi, and Christopher Lott. Neural dag scheduling via one-shot priority sampling
     year: '2023'
   ERZXPy4AAAAJ:Tyk-4Ss8FVUC:
@@ -78,15 +78,15 @@ papers:
     title: Node symmetry in machine learning compiler optimization
     year: '2024'
   ERZXPy4AAAAJ:UeHWp8X0CEIC:
-    citations: 61
+    citations: 62
     title: Control of unknown linear systems with thompson sampling
     year: '2017'
   ERZXPy4AAAAJ:W7OEmFMy1HYC:
-    citations: 29
+    citations: 30
     title: Posterior sampling-based reinforcement learning for control of unknown linear systems
     year: '2019'
   ERZXPy4AAAAJ:WF5omc3nYNoC:
-    citations: 7
+    citations: 8
     title: Thompson sampling for linear quadratic mean-field teams
     year: '2021'
   ERZXPy4AAAAJ:Wp0gIr-vW9MC:
@@ -102,11 +102,11 @@ papers:
     title: Regret analysis for learning in a multi-agent linear-quadratic control problem
     year: '2020'
   ERZXPy4AAAAJ:ZeXyd9-uunAC:
-    citations: 5
+    citations: 6
     title: 'CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction'
     year: '2025'
   ERZXPy4AAAAJ:aqlVkmm33-oC:
-    citations: 3
+    citations: 4
     title: 'VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs'
     year: '2025'
   ERZXPy4AAAAJ:d1gkVwhDpl0C:
@@ -146,7 +146,7 @@ papers:
     title: Memory-constrained attention in machine learning models
     year: '2026'
   ERZXPy4AAAAJ:qjMakFHDy7sC:
-    citations: 184
+    citations: 186
     title: 'Learning unknown markov decision processes: A thompson sampling approach'
     year: '2017'
   ERZXPy4AAAAJ:qxL8FJ1GzNcC:
@@ -166,7 +166,7 @@ papers:
     title: On noise-enhanced distributed inference in the presence of Byzantines
     year: '2011'
   ERZXPy4AAAAJ:ufrVoPGSRksC:
-    citations: 2
+    citations: 3
     title: A relaxed technical assumption for posterior sampling-based reinforcement learning for control of unknown linear systems
     year: '2021'
   ERZXPy4AAAAJ:zYLM7Y9cAGgC:
