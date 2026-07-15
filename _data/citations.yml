@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-15'
 papers:
   ERZXPy4AAAAJ:-f6ydRqryjwC:
     citations: 0
@@ -30,7 +30,7 @@ papers:
     title: 'Recursive speculative decoding: Accelerating llm inference via sampling without replacement'
     year: '2024'
   ERZXPy4AAAAJ:9ZlFYXVOiuMC:
-    citations: 22
+    citations: 23
     title: Neural topological ordering for computation graphs
     year: '2022'
   ERZXPy4AAAAJ:9yKSN-GCB0IC:
@@ -106,7 +106,7 @@ papers:
     title: 'CAOTE: KV Cache Selection for LLMs via Attention Output Error-Based Token Eviction'
     year: '2025'
   ERZXPy4AAAAJ:aqlVkmm33-oC:
-    citations: 4
+    citations: 6
     title: 'VOCABTRIM: Vocabulary Pruning for Efficient Speculative Decoding in LLMs'
     year: '2025'
   ERZXPy4AAAAJ:d1gkVwhDpl0C:
@@ -150,7 +150,7 @@ papers:
     title: 'Learning unknown markov decision processes: A thompson sampling approach'
     year: '2017'
   ERZXPy4AAAAJ:qxL8FJ1GzNcC:
-    citations: 2
+    citations: 3
     title: 'Caote: Kv caching through attention output error based token eviction'
     year: '2025'
   ERZXPy4AAAAJ:roLk4NBRz8UC:
